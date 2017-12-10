@@ -1,0 +1,47 @@
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.content {
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid grey;
+	padding: 30px;
+}
+
+.questionArea {
+	margin: 0 auto;
+}
+
+.scoreArea {
+	margin-top: -90px;
+}
+
+.col {
+	float: left;
+	text-align: center;
+}
+
+.left, .right {
+	width: 20%;
+}
+
+.middle {
+	width: 60%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1 {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+

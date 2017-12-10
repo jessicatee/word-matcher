@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Word Matcher</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="row content">
+			<h1>Word Matcher Game</h1>
+			<div class="col left scoreArea">
+				<h2>Current Score</h2>
+				<p id="currentScore">0</p>
+			</div>
+			<div class="col middle questionArea">
+				<p>Enter the translation of the word shown!</p>
+				<button type="button" id="startNew">Start</button>
+				<p id="question"></p>
+				<input type="text" id="userAnswer" class="hidden">
+				<button type="button" id="submitAnswer" class="hidden">Submit</button>
+			</div>
+			<div class="col right scoreArea">
+				<h2>High Score</h2>
+				<p id="highScore">0</p>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="logic.js"></script>
+</html>
