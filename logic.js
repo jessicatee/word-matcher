@@ -7,17 +7,11 @@ document.getElementById("startNew").addEventListener("click", newGame);
 
 function buildQuestions(num) {
 
-	function findAnswer(element) {
-  		return element == answer;
-	};
-
 	var wordPairs = [["cat", "katze"], ["dog", "hund"], ["mouse", "maus"], ["rabbit", "kaninchen"], ["bird", "vogel"],
 					["cow", "kuh"], ["sheep", "schaf"], ["pig", "schwein"], ["chicken", "huhn"]];
 
-	// Builds a bank of questions, avoiding duplicates
+	// Builds a bank of questions
 	do {
-
-		var answers = [];
 		var answer = "";
 		var question = "Translate the ";
 
@@ -38,12 +32,6 @@ function buildQuestions(num) {
 		}
 
 		question += wordPairs[word][language] + "</strong>: ";
-
-		//if (answers.findIndex(findAnswer) >= 0) {
-		//	answers.pop();
-		//} else {
-		//	questionBank.push([question, answer]);
-		//}
 
 		questionBank.push([question, answer]);
 
@@ -70,6 +58,12 @@ function newGame() {
 		} else {
 			alert("Sorry, that was incorrect");
 		}
+	}
+
+	alert("You got " + currentScore + " correct answers");
+
+	if (currentScore > highScore) {
+		highScore = currentScore;
 	}
 
 };
